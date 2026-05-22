@@ -9,7 +9,7 @@ const Navbar =()=>{
           </div>
           <div className="flex gap-10 p-3 text-1xl ">
            <a href="#home">Home</a>
-           <a href="#tool">Tool</a>
+           <a href="#tool">Tools</a>
            <a href="#about">About</a>
            <a href="#blog">Blog</a>
            <a href="#shop">Shop</a>

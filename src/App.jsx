@@ -1,20 +1,29 @@
 import Navbar from "./Component/Navbar";
 import HomeSection from "./Component/HomeSection";
+import Tools from "./Component/Tools"
 const App = () => {
   return (
     <div>
+      <title>AstroNest</title>
       {/* <header>Header</header> */}
       <div>
         <Navbar />
       </div>
       {/* Home Section */}
-      <HomeSection/>
-
-     <div>
+      <HomeSection />
+      {/* Tools */}
+      <div>
+        <section id="tool" className="bg-amber-900 font-bold h-screen text-2xl">
+          <Tools />
+        </section>
+      </div>
+      {/*About  */}
+      <div>
         <section id="about" className="bg-blue-100 font-bold h-screen text-2xl">
           About
         </section>
       </div>
+      {/* Service */}
       <div>
         <section
           id="service"
@@ -23,12 +32,13 @@ const App = () => {
           Service{" "}
         </section>
       </div>
+      {/* Success Stories */}
       <div>
         <section
           id="success-stories"
           className="bg-amber-300 font-bold h-screen text-2xl"
         >
-          Success Stories{" "}
+          Success Stories
         </section>
       </div>
       <div>
