@@ -34,7 +34,7 @@ const HomeSection = () => {
             <CommonButton text=">Watch Indroduction" />
           </div>
         </div>
-        <div className="flex " >
+        <div className="flex" >
         <CommonBottom/>
         <CommonBottom htext="50K" ptext="Happy Client"/>
         <CommonBottom htext="100K" ptext="Consultant"/>

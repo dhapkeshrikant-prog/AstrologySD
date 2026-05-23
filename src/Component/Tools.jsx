@@ -3,9 +3,9 @@ import Card from "./Card";
 const Tools = ()=>{
     return(
         <div>
-            <div className ="flex flex-col justify-center font-normal items-center p-5">
-                <h1 className="font-sans md:text-5xl">Free Astrology Tools</h1>
-                <p className="font text-3xl ">Explore Powerful tools for free</p>
+            <div className ="flex flex-col justify-center font-normal text-white items-center p-5">
+                <h1 className="font-bold md:text-4xl">Free Astrology Tools</h1>
+                <p className="font text-2xl ">Explore Powerful tools for free</p>
             </div>
             <div className ="Card-Container flex gap-5">
                 {/* Card1 */}

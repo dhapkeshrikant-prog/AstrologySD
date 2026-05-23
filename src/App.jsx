@@ -1,6 +1,7 @@
 import Navbar from "./Component/Navbar";
 import HomeSection from "./Component/HomeSection";
 import Tools from "./Component/Tools"
+import About from "./Component/About"
 const App = () => {
   return (
     <div>
@@ -19,9 +20,7 @@ const App = () => {
       </div>
       {/*About  */}
       <div>
-        <section id="about" className="bg-blue-100 font-bold h-screen text-2xl">
-          About
-        </section>
+        <About />
       </div>
       {/* Service */}
       <div>

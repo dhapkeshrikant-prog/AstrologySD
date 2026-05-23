@@ -1,7 +1,7 @@
 import CommonButton from "../CommonComponent/CommonButton";
 const Card=({heading="-",img="",context="-"})=>{
     return(
-        <div className="h-100 mx-8 w-75 bg-amber-200">
+        <div className="h-110  mx-6 w-80  bg-mauve-500">
             {/* Card Image */}
          <div>   
          <img className="h-60  bg-cyan-400"src={img} alt="Card Img" />
@@ -15,7 +15,7 @@ const Card=({heading="-",img="",context="-"})=>{
          {/* button */}
          <div className="flex justify-center">
           <CommonButton text="Try-Now >" /> 
-          ,</div>      
+          </div>      
         </div>
     )
 
