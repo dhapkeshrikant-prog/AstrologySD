@@ -1,9 +1,15 @@
 import AboutCard from "../CommonComponent/AboutCard";
 import CommonBottom from "../CommonComponent/CommonBottom";
+import aboutBg from "../assets/about.png";
 import Navbar from "./Navbar";
+
 const About = () => {
   return (
-    <section id="about" className="bg-center bg-cover bg-no-repeat bg-amber-950 h-screen bg-[url('https://images.pexels.com/photos/10780188/pexels-photo-10780188.jpeg')]">
+    <section
+      id="about"
+      className="bg-center bg-cover bg-no-repeat bg-amber-950 min-h-screen pb-8"
+      style={{ backgroundImage: `url(${aboutBg})` }}
+    >
         <div>
           <Navbar></Navbar>
         </div>
@@ -22,12 +28,14 @@ const About = () => {
         <AboutCard  img="https://media.istockphoto.com/id/2208471294/photo/zodiac-signs-and-astrology-wheel.webp?a=1&b=1&s=612x612&w=0&k=20&c=a2pFvW2R3lfaPKw6pJ9BpeLowYMHE6uAW9V4nKJc2iY=" heading="Vedic Astrology" subheading="Astrology define on birth date and day"/> 
         <AboutCard  img="https://media.istockphoto.com/id/2208471294/photo/zodiac-signs-and-astrology-wheel.webp?a=1&b=1&s=612x612&w=0&k=20&c=a2pFvW2R3lfaPKw6pJ9BpeLowYMHE6uAW9V4nKJc2iY=" heading="Vedic Astrology" subheading="Astrology define on birth date and day"/> 
     </div>
-    <div className="flex" >
-        <CommonBottom/>
-        <CommonBottom htext="50K" ptext="Happy Client"/>
-        <CommonBottom htext="100K" ptext="Consultant"/>
-        <CommonBottom htext="25+" ptext="Country"/>
-        <CommonBottom htext="4.9" ptext="Average Rating"/>
+    <div>
+      <div className="flex">
+          <CommonBottom />
+          <CommonBottom htext="50K" ptext="Happy Client" />
+          <CommonBottom htext="100K" ptext="Consultant" />
+          <CommonBottom htext="25+" ptext="Country" />
+          <CommonBottom htext="4.9" ptext="Average Rating" />
+        </div>
         </div>
     </section>
   );

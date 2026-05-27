@@ -1,48 +1,63 @@
 import CommonBottom from "../CommonComponent/CommonBottom";
 import CommonButton from "../CommonComponent/CommonButton";
+import homeBg from "../assets/Home.png";
+
+const features = ["Ancient Wisdom", "Modern Approach", "Personalised Guidance"];
+
 const HomeSection = () => {
   return (
     <div>
       <section
         id="home"
-        className=" bg-cover bg-right bg-no-repeat min-h-screen flex flex-col justify-center  
-          bg-[url('https://plus.unsplash.com/premium_photo-1701068457053-d21ad8f94a1c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]" >
-       
-        <div className="flex flex-col max-w-3xl gap-3 px-30 ">
-          {/* Heading  */}
-          <div>
-            <h1 className=" text-white text-6xl md:text-5xl leading-none font">
-              Align Your Stars.<br></br>Align Your Life
-            </h1>
+        className="flex min-h-screen flex-col justify-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${homeBg})` }}
+      >
+        <div className="flex max-w-3xl flex-col gap-3 px-30">
+          <div className ="flex flex-col">
+              <h1 className="text-amber-300 font text-5xl leading-none md:text-6xl">Align Your Stars.</h1>
+              <br />
+              <h1 className="text-white font text-5xl leading-none md:text-6xl">
+              Align Your Life
+               </h1>
           </div>
-          {/* Sub Heading */}
-          <div className="font text-white text-1xl md:text-1xl ">
+
+          <div className="font text-1xl md:text-1xl">
             <h2>
-              Personalised Astrology, Vastu & <br></br> Numerology Guidance by
+              Personalised Astrology, Vastu  <br/> Numerology Guidance by
               ........
             </h2>
           </div>
-          {/* feature */}
-          <div className="text-1xl text-white md:text-1xl">
-            <h3> Ancient Wisdom</h3>
-            <h3> Modern Approach</h3>
-            <h3> Personalised Guidance</h3>
+
+          <div className="flex flex-col gap-2 text-amber-50">
+            {features.map((feature) => (
+              <h3
+                key={feature}
+                className="flex items-center gap-3 text-base font-normal md:text-lg"
+              >
+                <span className="flex size-5 items-center justify-center rounded-full border border-amber-400/70 bg-amber-500/15 text-[11px] font-bold text-amber-300 shadow-[0_0_10px_rgba(251,191,36,0.35)]">
+                  {"\u2713"}
+                </span>
+                <span className="text-amber-50/90">{feature}</span>
+              </h3>
+            ))}
           </div>
-          {/* buttons */}
+
           <div className="flex gap-2">
             <CommonButton text="Explore Astronet" />
             <CommonButton text=">Watch Indroduction" />
           </div>
         </div>
-        <div className="flex" >
-        <CommonBottom/>
-        <CommonBottom htext="50K" ptext="Happy Client"/>
-        <CommonBottom htext="100K" ptext="Consultant"/>
-        <CommonBottom htext="25+" ptext="Country"/>
-        <CommonBottom htext="4.9" ptext="Average Rating"/>
+
+        <div className="flex">
+          <CommonBottom />
+          <CommonBottom htext="50K" ptext="Happy Client" />
+          <CommonBottom htext="100K" ptext="Consultant" />
+          <CommonBottom htext="25+" ptext="Country" />
+          <CommonBottom htext="4.9" ptext="Average Rating" />
         </div>
       </section>
     </div>
   );
 };
+
 export default HomeSection;
