@@ -1,4 +1,9 @@
-const CommonBottom =({htext="10+",ptext="Year Experiance"})=>{
+type CommonBottomProps = {
+    htext?: string;
+    ptext?: string;
+};
+
+const CommonBottom =({htext="10+",ptext="Year Experiance"}: CommonBottomProps)=>{
     return(
 
         <div className="m-12 h-30 w-30 pt-6 px-20 text-white">

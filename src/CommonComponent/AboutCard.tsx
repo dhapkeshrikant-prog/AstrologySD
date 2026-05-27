@@ -1,4 +1,10 @@
-const AboutCard =({img="-", heading="-",subheading="-"})=>{
+type AboutCardProps = {
+    img?: string;
+    heading?: string;
+    subheading?: string;
+};
+
+const AboutCard =({img="-", heading="-",subheading="-"}: AboutCardProps)=>{
     return(
     <div className ="flex">
         <div className ="flex h-16 mx-24 gap-1 justify-items-start w-100">
@@ -7,7 +13,7 @@ const AboutCard =({img="-", heading="-",subheading="-"})=>{
         </span>
         <span className ="text-white p-1 ">
             <h2 className=" text-2xl">{heading}</h2>
-            <p1>{subheading}</p1>
+            <p>{subheading}</p>
         </span>
         </div>
     </div>

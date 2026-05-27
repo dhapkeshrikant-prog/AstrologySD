@@ -14,7 +14,7 @@ const App = () => {
       <HomeSection />
       {/* Tools */}
       <div>
-        <section id="tool" className="bg-amber-900 font-bold h-screen text-2xl">
+        <section id="tool" className="bg-amber-900 min-h-cover bg-center bg-fit font-bold h-screen text-2xl bg-[url('https://images.pexels.com/photos/4790580/pexels-photo-4790580.jpeg')]">
           <Tools />
         </section>
       </div>

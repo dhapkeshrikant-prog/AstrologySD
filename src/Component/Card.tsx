@@ -1,5 +1,12 @@
 import CommonButton from "../CommonComponent/CommonButton";
-const Card=({heading="-",img="",context="-"})=>{
+
+type CardProps = {
+    heading?: string;
+    img?: string;
+    context?: string;
+};
+
+const Card=({heading="-",img="",context="-"}: CardProps)=>{
     return(
         <div className="h-110  mx-6 w-80  bg-mauve-500">
             {/* Card Image */}
