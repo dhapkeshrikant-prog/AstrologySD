@@ -1,28 +1,23 @@
 import Navbar from "./Component/Navbar";
 import HomeSection from "./Component/HomeSection";
-import Tools from "./Component/Tools"
-import About from "./Component/About"
+import Tools from "./Component/Tools";
+import About from "./Component/About";
+import MeetYourAstronet from "./Component/MeetYourAstronet";
 const App = () => {
   return (
     <div>
       <title>AstroNest</title>
-      {/* <header>Header</header> */}
-      <div>
-        <Navbar />
-      </div>
-      {/* Home Section */}
+      <Navbar />
       <HomeSection />
-      {/* Tools */}
+      <MeetYourAstronet />
       <div>
-        <section id="tool" className="bg-amber-900 min-h-cover bg-center bg-fit font-bold h-screen text-2xl bg-[url('https://images.pexels.com/photos/4790580/pexels-photo-4790580.jpeg')]">
+        <section id="tool" className="bg-amber-900 min-h-cover bg-center bg-fit font-bold h-screen text-2xl">
           <Tools />
         </section>
       </div>
-      {/*About  */}
       <div>
         <About />
       </div>
-      {/* Service */}
       <div>
         <section
           id="service"
@@ -31,7 +26,6 @@ const App = () => {
           Service{" "}
         </section>
       </div>
-      {/* Success Stories */}
       <div>
         <section
           id="success-stories"
